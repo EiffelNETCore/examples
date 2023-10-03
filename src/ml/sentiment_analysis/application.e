@@ -22,6 +22,7 @@ feature {NONE} -- Initialization
 		do
 			print("Sentiment Analysis using Eiffel.Net %N")
 			print (data_path)
+			print("%NClick Enter to continue %N")
 			io.read_line
 
 				-- Initialize the ML Context
@@ -36,7 +37,9 @@ feature {NONE} -- Initialization
 			use_model_with_batch_items (ml_context_facade, l_model)
 			{SYSTEM_CONSOLE}.write_line
 			{SYSTEM_CONSOLE}.write_line("====================== End of process =========================")
+			print("%NClick Enter to end %N")
 			io.read_line
+
 		end
 
 	data_path: SYSTEM_STRING

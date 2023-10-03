@@ -8,7 +8,7 @@
 			<exclude>/\.git$</exclude>
 			<exclude>/\.svn$</exclude>
 			<exclude>/\Data$</exclude>
-			<exclude>/package$</exclude>
+			<exclude>/packages$</exclude>
 			<exclude>/obj$</exclude>
 		</file_rule>
 		<option warning="none" full_class_checking="false" is_obsolete_iteration="true">

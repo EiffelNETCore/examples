@@ -1,47 +1,46 @@
-# Analyze sentiment of website comments with binary classification in ML.NET
+# Analyzing Website Comments' Sentiment with Binary Classification in ML.NET
 
-This tutorial shows you how to create am Eiffel application using .NET Core that classifies sentiment from website comments and takes the appropriate action. 
-The binary sentiment classifier uses Eiffel programming language
+This tutorial guides you through the process of creating an Eiffel application using .NET Core. The application classifies sentiments from website comments and performs appropriate actions. The binary sentiment classifier is implemented using the Eiffel programming language.
 
 ## Overview
-* Create a console application
-* Prepare data
-* Load the data
-* Build and train the model
-* Evaluate the model
-* Use the model to make a prediction
-* See the results
+* Creating a console application
+* Preparing the data
+* Loading the data
+* Building and training the model
+* Evaluating the model
+* Using the model to make predictions
+* Viewing the results
 
-## Getting Started
+## Prerequisites
+* EiffelStudio 23.09 or later 
+* .Net7
 
-* EiffelStudio 23.08 
-* .Net 7
+## Steps to Create a Console Application 
+1. Copy the project template net7.
+2. Rename it as `sentiment_analysis`.
+    * sentiment_analysis.ecf
+3. Download the [UCI Sentiment Labeled Sentences dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip) (ZIP file).    
 
-## Create a console application 
-TODO check how can we use the Eiffel .Net wizard to use it.    
-    *  Copy the project template net7
-    *  Rename it as sentiment_analysis 
-        * sentiment_analysis.ecf
-    * [UCI Sentiment Labeled Sentences dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip) (ZIP file)    
-   
+## Adding Required Packages
+Execute the following command to add the necessary package:
 
-##  Add the following packages
-
-`dotnet add package Microsoft.ML --version 1.7.1 --package-directory packages`
+```bash
+dotnet add package Microsoft.ML --version 1.7.1 --package-directory packages
+```
 
 ### Note
-Due to current limitations with Generics the code uses C# Facade for this specific example.
-Tha library enable us to access the generic features of the ML library that at the moment can't be consumed.
+Due to current limitations with Generics, this specific example uses a C# Facade. This library enables us to access the generic features of the ML library that can't be consumed at the moment.
 
-# Prepare your data
+### Compiling the Facade Library
+1. Navigate to the `cs\SentimentAnalysisFacadeLibrary` folder.
+2. Execute the following command:
 
-    ```
-    The datasets for this tutorial are from the 'From Group to Individual Labels using Deep Features', Kotzias et. al,. KDD 2015, and hosted at the UCI Machine Learning Repository - Dua, D. and Karra Taniskidou, E. (2017). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
-    ```
-    
-    * Create a `Data` directory
-    * Download `UCI Sentiment Labeled Sentences dataset ZIP file`, and unzip.
-    * Copy the `yelp_labelled.txt`` file into the `Data`` directory you created.
+```bash
+dotnet build
+```
+
+Alternatively, you can use Visual Studio to build the project.
 
 
-The code is based on the following [C# tutorial](https://learn.microsoft.com/en-us/dotnet/machine-learning/tutorials/sentiment-analysis)
+## Reference C# Tutorial
+The code in this tutorial is based on the following [C# tutorial](https://learn.microsoft.com/en-us/dotnet/machine-learning/tutorials/sentiment-analysis).
