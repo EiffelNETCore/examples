@@ -32,11 +32,11 @@ dotnet add package Microsoft.ML --version 1.7.1 --package-directory packages
 Due to current limitations with Generics, this specific example uses a C# Facade. This library enables us to access the generic features of the ML library that can't be consumed at the moment.
 
 ### Compiling the Facade Library
-1. Navigate to the `cs\SentimentAnalysisFacadeLibrary` folder.
+1. Navigate to the `cs\sentiment_analysis_facade_library` folder.
 2. Execute the following command:
 
 ```bash
-dotnet build
+dotnet build --output ..\..\sentiment_analysis\packages
 ```
 
 Alternatively, you can use Visual Studio to build the project.
