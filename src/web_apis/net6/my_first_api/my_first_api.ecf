@@ -59,8 +59,9 @@
 	
 	<assembly name="System.Collections" location="$ISE_DOTNET_FRAMEWORK\System.Collections.dll"/>
 	<assembly name="System.ComponentModel" location="$ISE_DOTNET_FRAMEWORK\System.ComponentModel.dll"/>
+		<assembly name="ASPNetUtil" location="..\..\cs\ASPNetUtil\ASPNetUtil\bin\Debug\net7.0\ASPNetUtil.dll"/>
 
-		<assembly name="Microsoft.OpenApi" location=".\\packages\microsoft.openapi\1.2.3\lib\netstandard2.0\Microsoft.OpenApi.dll"/>
+		<assembly name="Microsoft.OpenApi" location=".\packages\microsoft.openapi\1.2.3\lib\netstandard2.0\Microsoft.OpenApi.dll"/>
 		
 
 		<assembly name="Swashbuckle.AspNetCore.Swagger" location=".\packages\swashbuckle.aspnetcore.swagger\6.5.0\lib\net6.0\Swashbuckle.AspNetCore.Swagger.dll"/>
