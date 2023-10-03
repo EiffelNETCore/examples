@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-23-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-23-0 http://www.eiffel.com/developers/xml/configuration-1-23-0.xsd" name="my_first_api" >
+	<target name="my_first_api">
+		<root cluster="root_cluster" class="APPLICATION" feature="make"/>
+		<file_rule>
+			<exclude>/CVS$</exclude>
+			<exclude>/EIFGENs$</exclude>
+			<exclude>/\.git$</exclude>
+			<exclude>/\.svn$</exclude>
+		</file_rule>
+		<option warning="none" full_class_checking="false" is_obsolete_iteration="true">
+			<assertions precondition="true" postcondition="true" check="true" invariant="true" supplier_precondition="true"/>
+		</option>
+		<setting name="console_application" value="true"/>
+		<setting name="dotnet_naming_convention" value="True"/>
+		<setting name="executable_name" value="api_client_newtonsoft"/>
+		<setting name="msil_clr_version" value="Microsoft.NETCore.App.Ref/6.0"/>
+		<setting name="msil_generation" value="True"/>
+		<setting name="msil_generation_type" value="exe"/>
+		<setting name="dead_code_removal" value="all"/>
+		<capability>
+			<concurrency support="none"/>
+			<void_safety support="none"/>
+		</capability>
+
+		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
+
+		<assembly name="eiffelsoftware_runtime" location="$ISE_EIFFEL\studio\spec\$ISE_PLATFORM\lib\$ISE_DOTNET_PLATFORM\EiffelSoftware.Runtime.dll"/>
+		<assembly name="System.Runtime" location="$ISE_DOTNET_FRAMEWORK\System.Runtime.dll"/>
+		<assembly name="System.Console" location="$ISE_DOTNET_FRAMEWORK\System.Console.dll"/>
+
+
+		<assembly name="Microsoft.AspNetCore" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.AspNetCore.dll"/>
+
+	<assembly name="Microsoft.AspNetCore.HostFiltering" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.AspNetCore.HostFiltering.dll"/>
+	<assembly name="Microsoft.AspNetCore.Hosting" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.AspNetCore.Hosting.dll"/>
+	<assembly name="Microsoft.AspNetCore.Hosting.Abstractions" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.AspNetCore.Hosting.Abstractions.dll"/>
+	<assembly name="Microsoft.AspNetCore.Http" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.AspNetCore.Http.dll"/>
+	<assembly name="Microsoft.AspNetCore.Http.Abstractions" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.AspNetCore.Http.Abstractions.dll"/>
+
+	<assembly name="Microsoft.AspNetCore.HttpOverrides" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.AspNetCore.HttpOverrides.dll"/>
+	<assembly name="Microsoft.AspNetCore.Routing" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.AspNetCore.Routing.dll"/>
+	<assembly name="Microsoft.AspNetCore.Server.Kestrel.Core" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.AspNetCore.Server.Kestrel.Core.dll"/>
+	<assembly name="Microsoft.Extensions.Configuration" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.Extensions.Configuration.dll"/>
+	<assembly name="Microsoft.Extensions.Configuration.Abstractions" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll"/>
+
+	<assembly name="Microsoft.Extensions.DependencyInjection" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.Extensions.DependencyInjection.dll"/>
+	<assembly name="Microsoft.Extensions.DependencyInjection.Abstractions" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+	<assembly name="Microsoft.Extensions.Features" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.Extensions.Features.dll"/>
+	<assembly name="Microsoft.Extensions.FileProviders.Abstractions" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll"/>
+	<assembly name="Microsoft.Extensions.Hosting" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.Extensions.Hosting.dll"/>
+	<assembly name="Microsoft.Extensions.Hosting.Abstractions" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\\6.0.21\ref\net6.0\Microsoft.Extensions.Hosting.Abstractions.dll"/>
+
+	<assembly name="Microsoft.Extensions.Logging" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.Extensions.Logging.dll"/>
+	<assembly name="Microsoft.Extensions.Logging.Abstractions" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.Extensions.Logging.Abstractions.dll"/>
+	<assembly name="Microsoft.Extensions.Options" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.Extensions.Options.dll"/>
+	<assembly name="Microsoft.Extensions.Primitives" location="C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.21\ref\net6.0\Microsoft.Extensions.Primitives.dll"/>
+
+	
+	<assembly name="System.Collections" location="$ISE_DOTNET_FRAMEWORK\System.Collections.dll"/>
+	<assembly name="System.ComponentModel" location="$ISE_DOTNET_FRAMEWORK\System.ComponentModel.dll"/>
+
+		<assembly name="Microsoft.OpenApi" location=".\\packages\microsoft.openapi\1.2.3\lib\netstandard2.0\Microsoft.OpenApi.dll"/>
+		
+
+		<assembly name="Swashbuckle.AspNetCore.Swagger" location=".\packages\swashbuckle.aspnetcore.swagger\6.5.0\lib\net6.0\Swashbuckle.AspNetCore.Swagger.dll"/>
+		<assembly name="Swashbuckle.AspNetCore.SwaggerGen" location=".\packages\swashbuckle.aspnetcore.swaggergen\6.5.0\lib\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll"/>
+		<assembly name="Swashbuckle.AspNetCore.SwaggerUI" location=".\packages\swashbuckle.aspnetcore.swaggerui\6.5.0\lib\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll"/>
+		<cluster name="root_cluster" location=".\" recursive="true">
+			<option warning="none" is_obsolete_iteration="true"/>
+		</cluster>
+	</target>
+</system>

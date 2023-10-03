@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-23-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-23-0 http://www.eiffel.com/developers/xml/configuration-1-23-0.xsd" name="my_first_api_net7" >
+	<target name="my_first_api_net7">
+		<root cluster="root_cluster" class="APPLICATION" feature="make"/>
+		<file_rule>
+			<exclude>/CVS$</exclude>
+			<exclude>/EIFGENs$</exclude>
+			<exclude>/\.git$</exclude>
+			<exclude>/\.svn$</exclude>
+			<exclude>/obj$</exclude>
+			<exclude>/packages$</exclude>
+			<exclude>/properties$</exclude>
+		</file_rule>
+		<option warning="none" full_class_checking="false" is_obsolete_iteration="true">
+			<assertions precondition="true" postcondition="true" check="true" invariant="true" supplier_precondition="true"/>
+		</option>
+		<setting name="console_application" value="true"/>
+		<setting name="dotnet_naming_convention" value="True"/>
+		<setting name="executable_name" value="my_first_api"/>
+		<setting name="msil_clr_version" value="net7.0"/>
+		<setting name="msil_generation" value="True"/>
+		<setting name="msil_generation_type" value="exe"/>
+		<setting name="dead_code_removal" value="all"/>
+		<capability>
+			<concurrency support="none"/>
+			<void_safety support="none"/>
+		</capability>
+
+
+		<namespace name="Microsoft.AspNetCore.Mvc">
+			<renaming old_name="ROUTE_ATTRIBUTE" new_name="ROUTE_MVC_ATTRIBUTE"/>
+		</namespace>
+
+		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
+		<assembly name="eiffelsoftware_runtime" location="$ISE_EIFFEL\studio\spec\$ISE_PLATFORM\lib\$ISE_DOTNET_PLATFORM\EiffelSoftware.Runtime.dll"/>
+		<assembly name="System.Runtime" location="$ISE_DOTNET_FRAMEWORK\System.Runtime.dll"/>
+		<assembly name="System.Console" location="$ISE_DOTNET_FRAMEWORK\System.Console.dll"/>
+		<assembly name="System.Collections" location="$ISE_DOTNET_FRAMEWORK\System.Collections.dll"/>
+		<assembly name="System.ComponentModel" location="$ISE_DOTNET_FRAMEWORK\System.ComponentModel.dll"/>
+		<assembly name="System.ComponentModel.Annotations" location="$ISE_DOTNET_FRAMEWORK\System.ComponentModel.Annotations.dll"/>
+		<assembly name="System.Linq" location="$ISE_DOTNET_FRAMEWORK\System.Linq.dll"/>
+		<assembly name="System.ObjectModel" location="$ISE_DOTNET_FRAMEWORK\System.ObjectModel.dll"/>
+		<assembly name="System.Text.Json" location="$ISE_DOTNET_FRAMEWORK\System.Text.Json.dll"/>
+		<assembly name="System.Text.RegularExpressions" location="$ISE_DOTNET_FRAMEWORK\System.Text.RegularExpressions.dll"/>
+		<assembly name="System.Xml.ReaderWriter" location="$ISE_DOTNET_FRAMEWORK\System.Xml.ReaderWriter.dll"/>
+		<assembly name="System.Xml.XPath" location="$ISE_DOTNET_FRAMEWORK\System.Xml.XPath.dll"/>
+
+		<!--assembly name="System.Diagnostics.EventLog" location="$ISE_DOTNET_FRAMEWORK\System.Diagnostics.EventLog.dll"/-->
+		<!-- $ISE_DOTNET_FRAMEWORK = "c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.21\ref\net6.0\ -->
+		<!-- $ISE_ASPNET_CORE = "C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref-->
+		
+		
+		<assembly name="Microsoft.AspNetCore" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.dll"/>
+
+		<assembly name="Microsoft.AspNetCore.Antiforgery" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Antiforgery.dll"/>
+		
+		<assembly name="Microsoft.AspNetCore.Authentication" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Authentication.dll"/>
+		<assembly name="Microsoft.AspNetCore.Authentication.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Authentication.Abstractions.dll"/>
+		<assembly name="Microsoft.AspNetCore.Authentication.Cookies" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Authentication.Cookies.dll"/>
+		<assembly name="Microsoft.AspNetCore.Authentication.Core" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Authentication.Core.dll"/>
+		<assembly name="Microsoft.AspNetCore.Authentication.OAuth" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Authentication.OAuth.dll"/>
+		
+		<assembly name="Microsoft.AspNetCore.Authorization" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Authorization.dll"/>
+		<assembly name="Microsoft.AspNetCore.Authorization.Policy" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Authorization.Policy.dll"/>
+		
+		
+		<assembly name="Microsoft.AspNetCore.Components" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Components.dll"/>
+		<assembly name="Microsoft.AspNetCore.Components.Authorization" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Components.Authorization.dll"/>
+		<assembly name="Microsoft.AspNetCore.Components.Forms" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Components.Forms.dll"/>
+		<assembly name="Microsoft.AspNetCore.Components.Server" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Components.Server.dll"/>
+		<assembly name="Microsoft.AspNetCore.Components.Web" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Components.Web.dll"/>
+		
+		<assembly name="Microsoft.AspNetCore.Connections.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Connections.Abstractions.dll"/>
+		
+		<assembly name="Microsoft.AspNetCore.CookiePolicy" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.CookiePolicy.dll"/>
+		<assembly name="Microsoft.AspNetCore.Cors" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Cors.dll"/>
+		<assembly name="Microsoft.AspNetCore.Cryptography.Internal" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Cryptography.Internal.dll"/>
+		<assembly name="Microsoft.AspNetCore.Cryptography.KeyDerivation" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll"/>
+
+		<assembly name="Microsoft.AspNetCore.DataProtection" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.DataProtection.dll"/>
+		<assembly name="Microsoft.AspNetCore.DataProtection.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.DataProtection.Abstractions.dll"/>
+		<assembly name="Microsoft.AspNetCore.DataProtection.Extensions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.DataProtection.Extensions.dll"/>
+		
+		<assembly name="Microsoft.AspNetCore.Diagnostics" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Diagnostics.dll"/>
+		<assembly name="Microsoft.AspNetCore.Diagnostics.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Diagnostics.Abstractions.dll"/>
+		<assembly name="Microsoft.AspNetCore.Diagnostics.HealthChecks" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll"/>
+		
+		<assembly name="Microsoft.AspNetCore.HostFiltering" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.HostFiltering.dll"/>
+		<assembly name="Microsoft.AspNetCore.Hosting" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Hosting.dll"/>
+		<assembly name="Microsoft.AspNetCore.Hosting.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Hosting.Abstractions.dll"/>
+		<assembly name="Microsoft.AspNetCore.Hosting.Server.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll"/>
+		<assembly name="Microsoft.AspNetCore.Html.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Html.Abstractions.dll"/>
+		
+		<assembly name="Microsoft.AspNetCore.Http" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Http.dll"/>
+		<assembly name="Microsoft.AspNetCore.Http.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Http.Abstractions.dll"/>
+		<assembly name="Microsoft.AspNetCore.Http.Connections.Common" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Http.Connections.Common.dll"/>
+		<assembly name="Microsoft.AspNetCore.Http.Connections" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Http.Connections.dll"/>
+		<assembly name="Microsoft.AspNetCore.Http.Extensions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Http.Extensions.dll"/>
+		<assembly name="Microsoft.AspNetCore.Http.Features" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Http.Features.dll"/>
+		<assembly name="Microsoft.AspNetCore.Http.Results" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Http.Results.dll"/>
+		
+		<assembly name="Microsoft.AspNetCore.HttpLogging" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.HttpLogging.dll"/>
+		<assembly name="Microsoft.AspNetCore.HttpOverrides" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.HttpOverrides.dll"/>
+		<assembly name="Microsoft.AspNetCore.HttpsPolicy" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.HttpsPolicy.dll"/>
+		<assembly name="Microsoft.AspNetCore.Identity" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Identity.dll"/>
+
+		<assembly name="Microsoft.AspNetCore.Localization" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Localization.dll"/>
+		<assembly name="Microsoft.AspNetCore.Localization.Routing" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Localization.Routing.dll"/>
+		
+		<assembly name="Microsoft.AspNetCore.Metadata" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Metadata.dll"/>
+		<assembly name="Microsoft.AspNetCore.Mvc" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Mvc.dll"/>
+		<assembly name="Microsoft.AspNetCore.Mvc.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Mvc.Abstractions.dll"/>
+		<assembly name="Microsoft.AspNetCore.Mvc.ApiExplorer" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Mvc.ApiExplorer.dll"/>
+		<assembly name="Microsoft.AspNetCore.Mvc.Core" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Mvc.Core.dll"/>
+		<assembly name="Microsoft.AspNetCore.Mvc.Cors" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Mvc.Cors.dll"/>
+		<assembly name="Microsoft.AspNetCore.Mvc.DataAnnotations" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Mvc.DataAnnotations.dll"/>
+		<assembly name="Microsoft.AspNetCore.Mvc.Formatters.Json" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Mvc.Formatters.Json.dll"/>
+		<assembly name="Microsoft.AspNetCore.Mvc.Formatters.Xml" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll"/>
+		<assembly name="Microsoft.AspNetCore.Mvc.Localization" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Mvc.Localization.dll"/>
+		<assembly name="Microsoft.AspNetCore.Mvc.Razor" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Mvc.Razor.dll"/>
+		<assembly name="Microsoft.AspNetCore.Mvc.RazorPages" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Mvc.RazorPages.dll"/>
+		<assembly name="Microsoft.AspNetCore.Mvc.TagHelpers" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Mvc.TagHelpers.dll"/>
+		<assembly name="Microsoft.AspNetCore.Mvc.ViewFeatures" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Mvc.ViewFeatures.dll"/>
+		
+		<assembly name="Microsoft.AspNetCore.OutputCaching" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.OutputCaching.dll"/>
+		<assembly name="Microsoft.AspNetCore.RateLimiting" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.RateLimiting.dll"/>
+		<assembly name="Microsoft.AspNetCore.Razor" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Razor.dll"/>
+		<assembly name="Microsoft.AspNetCore.Razor.Runtime" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Razor.Runtime.dll"/>
+		
+		<assembly name="Microsoft.AspNetCore.RequestDecompression" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.RequestDecompression.dll"/>
+		<assembly name="Microsoft.AspNetCore.ResponseCaching.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll"/>
+		<assembly name="Microsoft.AspNetCore.ResponseCaching" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.ResponseCaching.dll"/>
+		<assembly name="Microsoft.AspNetCore.ResponseCompression" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.ResponseCompression.dll"/>
+		<assembly name="Microsoft.AspNetCore.Rewrite" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Rewrite.dll"/>
+		<assembly name="Microsoft.AspNetCore.Routing.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Routing.Abstractions.dll"/>
+		<assembly name="Microsoft.AspNetCore.Routing" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Routing.dll"/>
+		<assembly name="Microsoft.AspNetCore.Server.HttpSys" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Server.HttpSys.dll"/>
+		<assembly name="Microsoft.AspNetCore.Server.IIS" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Server.IIS.dll"/>
+		<assembly name="Microsoft.AspNetCore.Server.IISIntegration" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Server.IISIntegration.dll"/>
+		<assembly name="Microsoft.AspNetCore.Server.Kestrel.Core" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Server.Kestrel.Core.dll"/>
+		<assembly name="Microsoft.AspNetCore.Server.Kestrel.Transport.Quic" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll"/>
+		<assembly name="Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll"/>
+		<assembly name="Microsoft.AspNetCore.Server.Kestrel" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Server.Kestrel.dll"/>
+		<assembly name="Microsoft.AspNetCore.Session" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.Session.dll"/>
+		<assembly name="Microsoft.AspNetCore.SignalR.Common" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.SignalR.Common.dll"/>
+		<assembly name="Microsoft.AspNetCore.SignalR.Core" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.SignalR.Core.dll"/>
+		<assembly name="Microsoft.AspNetCore.SignalR.Protocols.Json" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.SignalR.Protocols.Json.dll"/>
+		<assembly name="Microsoft.AspNetCore.SignalR" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.SignalR.dll"/>
+		<assembly name="Microsoft.AspNetCore.StaticFiles" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.StaticFiles.dll"/>
+		<assembly name="Microsoft.AspNetCore.WebSockets" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.WebSockets.dll"/>
+		<assembly name="Microsoft.AspNetCore.WebUtilities" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.WebUtilities.dll"/>
+		<assembly name="Microsoft.AspNetCore" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.AspNetCore.dll"/>
+		<assembly name="Microsoft.Extensions.Caching.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Caching.Abstractions.dll"/>
+		<assembly name="Microsoft.Extensions.Caching.Memory" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Caching.Memory.dll"/>
+		<assembly name="Microsoft.Extensions.Configuration.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Configuration.Abstractions.dll"/>
+		<assembly name="Microsoft.Extensions.Configuration.Binder" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Configuration.Binder.dll"/>
+		<assembly name="Microsoft.Extensions.Configuration.CommandLine" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Configuration.CommandLine.dll"/>
+		<assembly name="Microsoft.Extensions.Configuration.EnvironmentVariables" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Configuration.EnvironmentVariables.dll"/>
+		<assembly name="Microsoft.Extensions.Configuration.FileExtensions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Configuration.FileExtensions.dll"/>
+		<assembly name="Microsoft.Extensions.Configuration.Ini" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Configuration.Ini.dll"/>
+		<assembly name="Microsoft.Extensions.Configuration.Json" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Configuration.Json.dll"/>
+		<assembly name="Microsoft.Extensions.Configuration.KeyPerFile" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Configuration.KeyPerFile.dll"/>
+		<assembly name="Microsoft.Extensions.Configuration.UserSecrets" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Configuration.UserSecrets.dll"/>
+		<assembly name="Microsoft.Extensions.Configuration.Xml" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Configuration.Xml.dll"/>
+		<assembly name="Microsoft.Extensions.Configuration" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Configuration.dll"/>
+		<assembly name="Microsoft.Extensions.DependencyInjection.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+		<assembly name="Microsoft.Extensions.DependencyInjection" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.DependencyInjection.dll"/>
+		<assembly name="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll"/>
+		<assembly name="Microsoft.Extensions.Diagnostics.HealthChecks" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Diagnostics.HealthChecks.dll"/>
+		<assembly name="Microsoft.Extensions.Features" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Features.dll"/>
+		<assembly name="Microsoft.Extensions.FileProviders.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.FileProviders.Abstractions.dll"/>
+		<assembly name="Microsoft.Extensions.FileProviders.Composite" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.FileProviders.Composite.dll"/>
+		<assembly name="Microsoft.Extensions.FileProviders.Embedded" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.FileProviders.Embedded.dll"/>
+		<assembly name="Microsoft.Extensions.FileProviders.Physical" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.FileProviders.Physical.dll"/>
+		<assembly name="Microsoft.Extensions.FileSystemGlobbing" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.FileSystemGlobbing.dll"/>
+		
+		<assembly name="Microsoft.Extensions.Hosting" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Hosting.dll"/>
+		<assembly name="Microsoft.Extensions.Hosting.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Hosting.Abstractions.dll"/>
+		
+		<assembly name="Microsoft.Extensions.Http" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Http.dll"/>
+		<assembly name="Microsoft.Extensions.Identity.Core" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Identity.Core.dll"/>
+		<assembly name="Microsoft.Extensions.Identity.Stores" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Identity.Stores.dll"/>
+		<assembly name="Microsoft.Extensions.Localization.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Localization.Abstractions.dll"/>
+		<assembly name="Microsoft.Extensions.Localization" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Localization.dll"/>
+		<assembly name="Microsoft.Extensions.Logging.Abstractions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Logging.Abstractions.dll"/>
+		<assembly name="Microsoft.Extensions.Logging.Configuration" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Logging.Configuration.dll"/>
+		<assembly name="Microsoft.Extensions.Logging.Console" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Logging.Console.dll"/>
+		<assembly name="Microsoft.Extensions.Logging.Debug" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Logging.Debug.dll"/>
+		<assembly name="Microsoft.Extensions.Logging.EventLog" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Logging.EventLog.dll"/>
+		<assembly name="Microsoft.Extensions.Logging.EventSource" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Logging.EventSource.dll"/>
+		<assembly name="Microsoft.Extensions.Logging.TraceSource" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Logging.TraceSource.dll"/>
+		<assembly name="Microsoft.Extensions.Logging" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Logging.dll"/>
+		<assembly name="Microsoft.Extensions.ObjectPool" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.ObjectPool.dll"/>
+		<assembly name="Microsoft.Extensions.Options.ConfigurationExtensions" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Options.ConfigurationExtensions.dll"/>
+		<assembly name="Microsoft.Extensions.Options.DataAnnotations" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Options.DataAnnotations.dll"/>
+		<assembly name="Microsoft.Extensions.Options" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Options.dll"/>
+		<assembly name="Microsoft.Extensions.Primitives" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.Primitives.dll"/>
+		<assembly name="Microsoft.Extensions.WebEncoders" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Extensions.WebEncoders.dll"/>
+		<assembly name="Microsoft.JSInterop" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.JSInterop.dll"/>
+		<assembly name="Microsoft.Net.Http.Headers" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\Microsoft.Net.Http.Headers.dll"/>
+		<assembly name="System.Diagnostics.EventLog" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\System.Diagnostics.EventLog.dll"/>
+		<assembly name="System.IO.Pipelines" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\System.IO.Pipelines.dll"/>
+		<assembly name="System.Security.Cryptography.Xml" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\System.Security.Cryptography.Xml.dll"/>
+		<assembly name="System.Threading.RateLimiting" location="${ISE_DOTNET_SHARED}\Microsoft.AspNetCore.App\${ISE_DOTNET_VERSION}\System.Threading.RateLimiting.dll"/>
+
+		<assembly name="System.ComponentModel" location="${ISE_DOTNET_FRAMEWORK}\System.ComponentModel.dll"/>
+		
+		<assembly name="ASPNetUtil" location="..\..\cs\ASPNetUtil\ASPNetUtil\bin\Debug\net7.0\ASPNetUtil.dll"/>
+
+		<assembly name="Microsoft.OpenApi" location=".\packages\microsoft.openapi\1.4.3\lib\netstandard2.0\Microsoft.OpenApi.dll"/>
+		<assembly name="Microsoft.AspNetCore.OpenApi" location=".\packages\microsoft.aspnetcore.openapi\7.0.10\lib\net7.0\Microsoft.AspNetCore.OpenApi.dll"/>
+		<assembly name="Swashbuckle.AspNetCore.Swagger" location=".\packages\swashbuckle.aspnetcore.swagger\6.5.0\lib\net7.0\Swashbuckle.AspNetCore.Swagger.dll"/>
+		<assembly name="Swashbuckle.AspNetCore.SwaggerGen" location=".\packages\swashbuckle.aspnetcore.swaggergen\6.5.0\lib\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll"/>
+		<assembly name="Swashbuckle.AspNetCore.SwaggerUI" location=".\packages\swashbuckle.aspnetcore.swaggerui\6.5.0\lib\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll"/>
+	    <assembly name="Microsoft.AspNetCore.JsonPatch" location=".\packages\microsoft.aspnetcore.jsonpatch\7.0.11\lib\net7.0\Microsoft.AspNetCore.JsonPatch.dll"/>
+		<assembly name="Microsoft.AspNetCore.Mvc.NewtonsoftJson" location=".\packages\microsoft.aspnetcore.mvc.newtonsoftjson\7.0.11\lib\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll"/>
+		<assembly name="Newtonsoft.Json" location=".\packages\Newtonsoft.Json\13.0.3\lib\net6.0\Newtonsoft.Json.dll"/>	
+		
+		<cluster name="root_cluster" location=".\" recursive="true">
+			<option warning="none" is_obsolete_iteration="true"/>
+		</cluster>
+	</target>
+</system>

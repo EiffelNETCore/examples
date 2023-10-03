@@ -1,0 +1,8 @@
+EIFGENs
+*.swp
+*.rc
+obj
+packages
+.vs
+bin
+obj

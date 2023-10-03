@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-23-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-23-0 http://www.eiffel.com/developers/xml/configuration-1-23-0.xsd" name="sentiment_analysis" >
+	<target name="sentiment_analysis">
+		<root cluster="root_cluster" class="APPLICATION" feature="make"/>
+		<file_rule>
+			<exclude>/CVS$</exclude>
+			<exclude>/EIFGENs$</exclude>
+			<exclude>/\.git$</exclude>
+			<exclude>/\.svn$</exclude>
+			<exclude>/\Data$</exclude>
+			<exclude>/package$</exclude>
+			<exclude>/obj$</exclude>
+		</file_rule>
+		<option warning="none" full_class_checking="false" is_obsolete_iteration="true">
+			<assertions precondition="true" postcondition="true" check="true" invariant="true" supplier_precondition="true"/>
+		</option>
+		<setting name="console_application" value="true"/>
+		<setting name="dotnet_naming_convention" value="True"/>
+		<setting name="executable_name" value="sentiment_analysis"/>
+		<setting name="msil_clr_version" value="Microsoft.NETCore.App.Ref/7.0"/>
+		<setting name="msil_generation" value="True"/>
+		<setting name="msil_generation_type" value="exe"/>
+		<setting name="dead_code_removal" value="all"/>
+		<capability>
+			<concurrency support="none"/>
+			<void_safety support="none"/>
+		</capability>
+
+		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
+		<assembly name="eiffelsoftware_runtime" location="$ISE_EIFFEL\studio\spec\$ISE_PLATFORM\lib\$ISE_DOTNET_PLATFORM\EiffelSoftware.Runtime.dll"/>
+		
+		<assembly name="System.Console" location="$ISE_DOTNET_FRAMEWORK\System.Console.dll"/>
+		<assembly name="System.Collections" location="$ISE_DOTNET_FRAMEWORK\System.Collections.dll"/>
+		<assembly name="System.Diagnostics.Debug" location="$ISE_DOTNET_FRAMEWORK\System.Diagnostics.Debug.dll"/>
+		
+		<assembly name="System.Dynamic.Runtime" location="$ISE_DOTNET_FRAMEWORK\System.Dynamic.Runtime.dll"/>
+		<assembly name="System.Globalization" location="$ISE_DOTNET_FRAMEWORK\System.Globalization.dll"/>
+		<assembly name="System.Linq" location="$ISE_DOTNET_FRAMEWORK\System.Linq.dll"/>
+		<assembly name="System.Linq.Expressions" location="$ISE_DOTNET_FRAMEWORK\System.Linq.Expressions.dll"/>
+		<assembly name="System.ObjectModel" location="$ISE_DOTNET_FRAMEWORK\System.ObjectModel.dll"/>
+		<assembly name="System.Reflection" location="$ISE_DOTNET_FRAMEWORK\System.Reflection.dll"/>
+		<assembly name="System.Reflection.Extensions" location="$ISE_DOTNET_FRAMEWORK\System.Reflection.Extensions.dll"/>
+		<assembly name="System.Reflection.TypeExtensions" location="$ISE_DOTNET_FRAMEWORK\System.Reflection.TypeExtensions.dll"/>
+
+
+		<assembly name="System.Resources.ResourceManager" location="$ISE_DOTNET_FRAMEWORK\System.Resources.ResourceManager.dll"/>
+		<assembly name="System.Runtime" location="$ISE_DOTNET_FRAMEWORK\System.Runtime.dll"/>
+		<assembly name="System.Runtime.Extensions" location="$ISE_DOTNET_FRAMEWORK\System.Runtime.Extensions.dll"/>
+		<assembly name="System.Runtime.InteropServices" location="$ISE_DOTNET_FRAMEWORK\System.Runtime.InteropServices.dll"/>
+		
+		<assembly name="System.Threading" location="$ISE_DOTNET_FRAMEWORK\System.Threading.dll"/>
+
+
+		<assembly name="Microsoft.ML.Core" location=".\packages\microsoft.ml\1.7.1\lib\netstandard2.0\Microsoft.ML.Core.dll"/>
+		<assembly name="Microsoft.ML.Data" location=".\packages\microsoft.ml\1.7.1\lib\netstandard2.0\Microsoft.ML.Data.dll"/>
+		<assembly name="Microsoft.ML.KMeansClustering" location=".\packages\microsoft.ml\1.7.1\lib\netstandard2.0\Microsoft.ML.KMeansClustering.dll"/>
+		<assembly name="Microsoft.ML.PCA" location=".\packages\microsoft.ml\1.7.1\lib\netstandard2.0\Microsoft.ML.PCA.dll"/>
+		<assembly name="Microsoft.ML.StandardTrainers" location=".\packages\microsoft.ml\1.7.1\lib\netstandard2.0\Microsoft.ML.StandardTrainers.dll"/>
+		<assembly name="Microsoft.ML.Transforms" location=".\packages\microsoft.ml\1.7.1\lib\netstandard2.0\Microsoft.ML.Transforms.dll"/>
+		<assembly name="Microsoft.ML" location=".\packages\microsoft.ml\1.7.1\lib\netstandard2.0\Microsoft.ML.dll"/>
+
+
+		<assembly name="Microsoft.ML.CpuMath" location=".\packages\microsoft.ml.cpumath\1.7.1\lib\netcoreapp3.1\Microsoft.ML.CpuMath.dll"/>
+		<assembly name="Microsoft.ML.DataView" location=".\packages\microsoft.ml.dataview\1.7.1\lib\netstandard2.0\Microsoft.ML.DataView.dll"/>
+		<assembly name="netstandard" location="$ISE_DOTNET_FRAMEWORK\netstandard.dll"/>
+
+		
+		<assembly name="System.Collections.Immutable" location=".\packages\system.collections.immutable\1.5.0\lib\netstandard2.0\System.Collections.Immutable.dll"/>
+		<assembly name="Newtonsoft.Json" location=".\packages\newtonsoft.json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll"/>
+		<assembly name="System.CodeDom" location=".\packages\system.codedom\4.4.0\lib\netstandard2.0\System.CodeDom.dll"/>
+		
+		<assembly name="System.Memory" location=".\packages\system.memory\4.5.3\lib\netstandard2.0\System.Memory.dll"/>
+
+		
+		
+		
+		<assembly name="System.Reflection.Emit.Lightweight" location=".\packages\system.reflection.emit.lightweight\4.3.0\ref\netstandard1.0\System.Reflection.Emit.Lightweight.dll"/>
+		<assembly name="System.IO" location=".\packages\system.io\4.3.0\ref\netstandard1.5\System.IO.dll"/>
+		<assembly name="System.Reflection.Emit.ILGeneration" location=".\packages\system.reflection.emit.ilgeneration\4.3.0\ref\netstandard1.0\System.Reflection.Emit.ILGeneration.dll"/>
+		
+		<assembly name="Sentiment.Analysis.Facade" location="..\cs\SentimentAnalysisFacadeLibrary\bin\Debug\net6.0\SentimentAnalysisFacadeLibrary.dll"/>
+		<cluster name="root_cluster" location=".\" recursive="true">
+			<option warning="none" is_obsolete_iteration="true"/>
+		</cluster>
+	</target>
+</system>
