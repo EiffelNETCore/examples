@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <Reference Include="SentimentAnalysisFacadeLibrary">
-      <HintPath>..\SentimentAnalysisFacadeLibrary\bin\Debug\net6.0\SentimentAnalysisFacadeLibrary.dll</HintPath>
+      <HintPath>..\sentiment_analysis_facade_library\bin\Debug\net6.0\SentimentAnalysisFacadeLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
 
