@@ -4,7 +4,6 @@
 This guide will help you build Web APIs using .NET and Eiffel, providing data to different clients through a uniform contract.
 
 
-
 ## Prerequisites
 - .NET 7
 - EiffelStudio 23.09 or greater
