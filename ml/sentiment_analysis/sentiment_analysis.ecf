@@ -17,7 +17,7 @@
 		<setting name="console_application" value="true"/>
 		<setting name="dotnet_naming_convention" value="True"/>
 		<setting name="executable_name" value="sentiment_analysis"/>
-		<setting name="msil_clr_version" value="Microsoft.NETCore.App.Ref/7.0"/>
+		<setting name="msil_clr_version" value="net7"/>
 		<setting name="msil_generation" value="True"/>
 		<setting name="msil_generation_type" value="exe"/>
 		<setting name="dead_code_removal" value="all"/>
@@ -78,7 +78,7 @@
 		<assembly name="System.IO" location=".\packages\system.io\4.3.0\ref\netstandard1.5\System.IO.dll"/>
 		<assembly name="System.Reflection.Emit.ILGeneration" location=".\packages\system.reflection.emit.ilgeneration\4.3.0\ref\netstandard1.0\System.Reflection.Emit.ILGeneration.dll"/>
 		
-		<assembly name="Sentiment.Analysis.Facade" location="..\cs\SentimentAnalysisFacadeLibrary\bin\Debug\net6.0\SentimentAnalysisFacadeLibrary.dll"/>
+		<assembly name="Sentiment.Analysis.Facade" location=".\packages\SentimentAnalysisFacadeLibrary.dll"/>
 		<cluster name="root_cluster" location=".\" recursive="true">
 			<option warning="none" is_obsolete_iteration="true"/>
 		</cluster>
