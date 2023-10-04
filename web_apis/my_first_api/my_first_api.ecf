@@ -205,7 +205,7 @@
 
 		<assembly name="System.ComponentModel" location="${ISE_DOTNET_FRAMEWORK}\System.ComponentModel.dll"/>
 		
-		<assembly name="ASPNetUtil" location="..\..\cs\ASPNetUtil\ASPNetUtil\bin\Debug\net7.0\ASPNetUtil.dll"/>
+		
 
 		<assembly name="Microsoft.OpenApi" location=".\packages\microsoft.openapi\1.4.3\lib\netstandard2.0\Microsoft.OpenApi.dll"/>
 		<assembly name="Microsoft.AspNetCore.OpenApi" location=".\packages\microsoft.aspnetcore.openapi\7.0.10\lib\net7.0\Microsoft.AspNetCore.OpenApi.dll"/>
@@ -216,6 +216,8 @@
 		<assembly name="Microsoft.AspNetCore.Mvc.NewtonsoftJson" location=".\packages\microsoft.aspnetcore.mvc.newtonsoftjson\7.0.11\lib\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll"/>
 		<assembly name="Newtonsoft.Json" location=".\packages\Newtonsoft.Json\13.0.3\lib\net6.0\Newtonsoft.Json.dll"/>	
 		
+		<assembly name="ASPNetUtil" location=".\packages\ASPNetUtil.dll"/>
+
 		<cluster name="root_cluster" location=".\" recursive="true">
 			<option warning="none" is_obsolete_iteration="true"/>
 		</cluster>

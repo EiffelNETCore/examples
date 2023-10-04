@@ -68,6 +68,14 @@ feature -- HTTP methods
 end
 ```
 
+### Compiling the Facade Library
+1. Navigate to the `cs\asp_net_util` folder.
+2. Execute the following command:
+
+```bash
+dotnet build --output ..\..\..\my_first_api\packages
+```
+
 ## Launching the Application
 1. Copy the `Properties` from the root directory project to `F_code`.
 2. Copy the `wrap_my_first_api.csproj` from the root directory project to `F_code`.
