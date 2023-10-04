@@ -31,6 +31,10 @@
 			<renaming old_name="ROUTE_ATTRIBUTE" new_name="ROUTE_MVC_ATTRIBUTE"/>
 		</namespace>
 
+		<namespace name="Newtonsoft.Json">
+			<renaming old_name="JSON_IGNORE_ATTRIBUTE" new_name="NS_JSON_IGNORE_ATTRIBUTE"/>
+		</namespace>
+
 		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
 		<assembly name="eiffelsoftware_runtime" location="$ISE_EIFFEL\studio\spec\$ISE_PLATFORM\lib\$ISE_DOTNET_PLATFORM\EiffelSoftware.Runtime.dll"/>
 		<assembly name="System.Runtime" location="$ISE_DOTNET_FRAMEWORK\System.Runtime.dll"/>
