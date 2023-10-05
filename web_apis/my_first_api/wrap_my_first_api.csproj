@@ -7,8 +7,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ASPNetUtil">
-      <HintPath>..\..\cs\ASPNetUtil\ASPNetUtil\bin\Debug\net7.0\ASPNetUtil.dll</HintPath>
+      <HintPath>.\packages\ASPNetUtil.dll</HintPath>
     </Reference>
+    <Reference Include="assembly_*.dll"/>
     <Reference Include="my_first_api">
       <HintPath>my_first_api.exe</HintPath>
     </Reference>
