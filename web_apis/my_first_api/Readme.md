@@ -69,7 +69,7 @@ end
 ```
 
 ### Compiling the Facade Library
-1. Navigate to the `cs\asp_net_util` folder.
+1. Navigate to the `cs\asp_net_util\ASPNetUtil` folder.
 2. Execute the following command:
 
 ```bash
