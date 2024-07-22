@@ -1,5 +1,10 @@
 note
-	description: "Analyze sentiment of website comments with binary classification in ML.NET implementated in Eiffel"
+	description: "[
+		Analyze sentiment of website comments with binary classification in ML.NET implementated in Eiffel
+		
+		Machine Learning Workflow
+			Prepare Your Data  => Build and Train => Run			
+		]"
 	EIS: "name=sentiment-analysis", "src=https://learn.microsoft.com/en-us/dotnet/machine-learning/tutorials/sentiment-analysis", "protocol=uri"
 
 class
@@ -30,8 +35,11 @@ feature {NONE} -- Initialization
 
 				-- load data
 			l_split_data_view := load_data (ml_context_facade)
-
+			
+				-- Build and Train
 			l_model := build_and_train_model (ml_context_facade, l_split_data_view)
+
+				-- Run
 			evaluate (ml_context_facade, l_split_data_view, l_model)
 			use_model_with_single_item (ml_context_facade, l_model)
 			use_model_with_batch_items (ml_context_facade, l_model)
