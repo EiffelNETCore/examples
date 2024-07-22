@@ -1,0 +1,22 @@
+﻿@model MathModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Math Form</title>
+</head>
+<body>
+    <form asp-action="MathResult" method="post">
+        <div>
+            <label for="value">Square Root of X:</label>
+            <input type="number" name="value" id="value" />
+        </div>
+        <button type="submit">Submit Math</button>
+    </form>
+</body>
+</html>

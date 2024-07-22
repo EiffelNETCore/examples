@@ -1,0 +1,18 @@
+﻿@model MathModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Math Form</title>
+</head>
+<body>
+    <div>
+        <p asp-for="X">Square Root of @Model.X() is @Model.SquareRoot()</p>
+    </div>
+</body>
+</html>

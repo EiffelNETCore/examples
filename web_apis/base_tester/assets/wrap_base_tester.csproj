@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <OutputType>exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="assembly_*.dll"/>
+    <Reference Include="base_tester">
+      <HintPath>base_tester.exe</HintPath>
+    </Reference>
+    <Reference Include="EiffelSoftware.Runtime">
+      <HintPath>Eiffelsoftware.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
